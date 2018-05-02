@@ -1,0 +1,14 @@
+#social {
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  .fa {
+    display: flex;
+    align-items: center;
+    padding: 35px 132px;
+    font-size: 23px;
+    border: 1px solid $socialBorder;
+    color: $socialGray;
+  }
+}

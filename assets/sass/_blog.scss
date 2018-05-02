@@ -1,0 +1,141 @@
+#blog {
+  height: 1030px;
+  background-color: $blogBackground;
+  .header {
+    width: 630px;
+    text-align: center;
+    padding: 140px 10px 15px 10px;
+    margin: 0 auto;
+    border-bottom: 1.5px solid $careersBorderGray;
+    span {
+      display: block;
+    }
+    .headline {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding-bottom: 10px;
+    }
+    .headline-subtext{
+      letter-spacing: 1px;
+      font-size: 16px;
+      color: $blogGray;
+    }
+  }
+  .blog-content {
+    padding-top: 125px;
+    // background: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1130px;
+    .remote-team {
+      -webkit-box-shadow: 3px 3px 75px -27px rgba(0,0,0,0.75);
+      -moz-box-shadow: 3px 3px 75px -27px rgba(0,0,0,0.75);
+      box-shadow: 3px 3px 75px -27px rgba(0,0,0,0.75);
+      background: $white;
+      width: 740px;
+      height: 480px;
+      display: inline-block;
+      border-radius: 10px;
+      .image-part {
+        display: inline-block;
+        width: 60%;
+        float: left;
+        overflow: hidden;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        img {
+          height: 480px;
+          position:relative;
+          left: -276px;
+        }
+      }
+      .content-part {
+        float: right;
+        width: 40%;
+        height: 484px;
+        display: inline-block;
+        .title {
+          color: black;
+          display: block;
+          font-size: 20px;
+          padding: 30px 35px 210px 30px;
+          letter-spacing: 2px;
+          line-height: 35px;
+        }
+        .author {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 55px 0 30px;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .time {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            color: $blogGray;
+            display: flex;
+            align-self: center;
+          }
+        }
+      }
+    }
+    .productivity {
+      -webkit-box-shadow: 3px 3px 75px -27px rgba(0,0,0,0.75);
+      -moz-box-shadow: 3px 3px 75px -27px rgba(0,0,0,0.75);
+      box-shadow: 3px 3px 75px -27px rgba(0,0,0,0.75);
+      max-width: 370px;
+      height: 478px;
+      background: $white;
+      display: inline-block;
+      border-radius: 10px;
+      .image-part {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        img {
+          height: 268px;
+          position:relative;
+          left: 0;
+          right: 0;
+        }
+      }
+      .content-part {
+        .title {
+          color: black;
+          display: flex;
+          justify-content: center;
+          font-size: 17px;
+          padding: 30px 30px 35px 30px;
+          letter-spacing: 2px;
+          line-height: 25px;
+        }
+        .author {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 55px 0 30px;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .time {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            color: $blogGray;
+            display: flex;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

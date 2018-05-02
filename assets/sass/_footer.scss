@@ -1,0 +1,74 @@
+#footer {
+  height: 485px;
+  width: 100%;
+  background: $white;
+  .content {
+    width: 1175px;
+    margin: 0 auto;
+    .section {
+      margin: 140px 80px 0 0;
+      display: inline-block;
+      vertical-align: text-top;
+      .title {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: black;
+      }
+      .nav {
+        margin-top: 20px;
+        a {
+          display: block;
+          color: $footerGray;
+          font-size: 14px;
+          margin-top: 10px;
+        }
+      }
+      .subtext {
+        color: $footerGray;
+        margin-top: 20px;
+        display: block;
+      }
+    }
+    .logo {
+      display: inline-block;
+      margin: 140px 150px 0 0;
+      i {
+        color: $footerGray;
+        font-size: 43px;
+      }
+    }
+    .newsletter {
+      margin-left: 140px;
+      max-width: 350px;
+      .email {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 6px;
+        width: 310px;
+        margin-top: 20px;
+        border: 1px solid $footerBorder;
+        .input {
+          width: 200%;
+          font-size: 13px;
+          color: $footerGray;
+          outline: none;
+          border: none;
+          &::placeholder {
+            font-size: 13px;
+            color: $footerGray;
+            margin-left: 10px;
+          }
+        }
+        #send {
+          font-size: 26px;
+          color: $white;
+          padding: 6px 16px;;
+          border-radius: 6px;
+          background: $footerBlue;
+        }
+      }
+    }
+  }
+}

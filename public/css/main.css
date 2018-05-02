@@ -1,0 +1,805 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit; }
+
+/* HTML5 display-role reset for older browsers */
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  background: url("https://wallpaperscraft.com/image/mountain_peak_stars_sky_night_light_snow_46057_1920x1080.jpg");
+  height: 1080px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  header .header {
+    background: rgba(64, 35, 131, 0.7);
+    height: 1080px; }
+  header .nav {
+    padding-top: 20px;
+    width: 63%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF; }
+    header .nav .logo {
+      display: flex;
+      align-items: center; }
+      header .nav .logo .fa {
+        font-size: 40px; }
+      header .nav .logo span {
+        font-size: 23px;
+        font-weight: 700;
+        padding-left: 15px;
+        letter-spacing: 0.8px; }
+    header .nav .nav-items {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      header .nav .nav-items .nav-pages a {
+        color: #A299BE;
+        padding-right: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: color .15s ease-in-out; }
+        header .nav .nav-items .nav-pages a:hover {
+          color: #FFF; }
+        header .nav .nav-items .nav-pages a.active {
+          color: #FFF; }
+      header .nav .nav-items .buy-icon {
+        display: inline-block; }
+        header .nav .nav-items .buy-icon a {
+          border: 1px solid #958DA6;
+          padding: 10px 20px;
+          border-radius: 25px;
+          color: #FFF;
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px; }
+          header .nav .nav-items .buy-icon a:hover {
+            background: #FFF;
+            border: 1px solid #FFF;
+            color: #3F217F;
+            transition: all 0.3s ease-in-out; }
+  header .mid-header {
+    width: 63%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 300px 0 0 0; }
+    header .mid-header * {
+      color: #FFF; }
+    header .mid-header .headline {
+      margin: 0 0 30px 0; }
+      header .mid-header .headline h1 {
+        font-size: 60px;
+        letter-spacing: 3px;
+        margin: 0 0 5px 0; }
+      header .mid-header .headline .headline-subtext {
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.3px; }
+    header .mid-header .mid-header-btn {
+      padding: 100px 0 0 0;
+      font-size: 15px;
+      text-transform: uppercase; }
+      header .mid-header .mid-header-btn .learn-more {
+        display: inline-block;
+        padding: 30px 0;
+        border: 1px solid #FFF;
+        margin: 0 10px;
+        border-radius: 50px;
+        font-weight: 600;
+        letter-spacing: 1.5px; }
+        header .mid-header .mid-header-btn .learn-more:hover {
+          background: #FFF;
+          border: 1px solid #FFF;
+          transition: all 0.3s ease-in-out; }
+        header .mid-header .mid-header-btn .learn-more a {
+          padding: 30px 60px; }
+          header .mid-header .mid-header-btn .learn-more a:hover {
+            color: #3F217F;
+            transition: all 0.3s ease-in-out; }
+      header .mid-header .mid-header-btn .watch-video {
+        display: inline-block;
+        padding: 30px 0;
+        border-radius: 50px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        background: rgba(0, 0, 0, 0.7);
+        margin: 0 10px; }
+        header .mid-header .mid-header-btn .watch-video .watch-video-btn {
+          padding: 30px 50px; }
+          header .mid-header .mid-header-btn .watch-video .watch-video-btn .fa {
+            position: relative;
+            margin-right: 10px; }
+    header .mid-header .header-dots {
+      position: absolute;
+      top: 450px;
+      right: 40px; }
+      header .mid-header .header-dots .fa {
+        display: block;
+        font-size: 5px;
+        margin: 10px 0 0 0;
+        color: #A299BE; }
+        header .mid-header .header-dots .fa.active {
+          color: #FFF; }
+    header .mid-header .header-bottom {
+      margin: 320px 0 0 0; }
+      header .mid-header .header-bottom * {
+        color: #d2cce3; }
+      header .mid-header .header-bottom span {
+        padding: 10px 0;
+        display: block;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        font-weight: 600; }
+      header .mid-header .header-bottom .fa {
+        font-size: 10px;
+        border: 2px solid #d2cce3;
+        padding: 2px 2px 10px 2px;
+        border-radius: 5px; }
+
+#about {
+  height: 1080px;
+  width: 63%;
+  margin: 0 auto; }
+  #about .headline {
+    padding: 140px 0 10px 0;
+    width: 770px;
+    margin: 0 auto;
+    border-bottom: 1px solid #eaecf1; }
+    #about .headline h1 {
+      font-size: 40px;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: #07143A; }
+    #about .headline .headline-subtext {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      color: #989DAD;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.7px; }
+  #about .services {
+    margin: 115px 0 0 0; }
+    #about .services .first-row {
+      display: flex;
+      justify-content: space-between; }
+      #about .services .first-row .service {
+        text-align: center;
+        margin: 0 30px; }
+        #about .services .first-row .service .fa {
+          font-size: 60px;
+          color: #6633CC;
+          margin: 0 0 30px 0; }
+        #about .services .first-row .service .service-title {
+          font-size: 25px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin: 0 0 25px 0;
+          color: #07143A; }
+        #about .services .first-row .service span {
+          color: #989DAD;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 30px;
+          letter-spacing: 0.7px; }
+    #about .services .second-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 140px; }
+      #about .services .second-row .service {
+        text-align: center;
+        margin: 0 30px; }
+        #about .services .second-row .service .fa {
+          font-size: 60px;
+          color: #6633CC;
+          margin: 0 0 30px 0; }
+          #about .services .second-row .service .fa.fa-mobile {
+            font-size: 80px;
+            margin: -12px 0 22px 0; }
+        #about .services .second-row .service .service-title {
+          font-size: 25px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin: 0 0 25px 0;
+          color: #07143A; }
+        #about .services .second-row .service span {
+          color: #989DAD;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 30px;
+          letter-spacing: 0.7px; }
+
+#team {
+  background: url("https://wallpaperscraft.com/image/night_sky_moon_trees_river_reflection_95979_1920x1080.jpg");
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #FFF;
+  position: relative; }
+  #team .team2 {
+    background: rgba(69, 75, 104, 0.3);
+    height: 1080px; }
+  #team .employee {
+    padding: 340px 0 0 0;
+    margin: 0 0 294px 370px;
+    margin-left: 25%;
+    max-width: 540px; }
+    #team .employee .employee-img {
+      border-radius: 50%;
+      margin: 0 0 16px 0;
+      width: 100px; }
+    #team .employee .employee-name .full-name {
+      display: block;
+      font-size: 35px;
+      letter-spacing: 3.5px;
+      font-weight: 600; }
+    #team .employee .employee-name .occupation {
+      margin: 10px 0 0 0;
+      display: block;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      font-weight: 600; }
+    #team .employee .employee-description {
+      margin: 50px 0 0 0;
+      font-size: 16px;
+      display: block;
+      letter-spacing: 0.8px;
+      line-height: 25px; }
+    #team .employee .social-media {
+      margin: 60px 0 0 0;
+      font-size: 28px; }
+      #team .employee .social-media a {
+        color: #FFF; }
+        #team .employee .social-media a.dribbble {
+          margin: 0 15px 0 0;
+          padding: 13px 16px;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out; }
+          #team .employee .social-media a.dribbble:hover {
+            background: rgba(255, 255, 255, 0.1); }
+        #team .employee .social-media a.twitter {
+          margin: 0 15px 0 0;
+          padding: 13px 16px;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out; }
+          #team .employee .social-media a.twitter:hover {
+            background: rgba(255, 255, 255, 0.1); }
+        #team .employee .social-media a.linkedin {
+          margin: 0 15px 0 0;
+          padding: 13px 17.5px;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out; }
+          #team .employee .social-media a.linkedin:hover {
+            background: rgba(255, 255, 255, 0.1); }
+  #team .dots {
+    position: absolute;
+    bottom: 40px;
+    right: 50%; }
+    #team .dots .fa {
+      font-size: 5px;
+      margin: 0 6px 0 0;
+      color: #A299BE; }
+      #team .dots .fa.active {
+        color: #FFF; }
+  #team .arrows {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    font-size: 30px; }
+    #team .arrows .fa {
+      background: rgba(255, 255, 255, 0.13);
+      padding: 13px 16px;
+      border-radius: 50%; }
+    #team .arrows .left {
+      float: left;
+      margin-left: 60px; }
+    #team .arrows .right {
+      float: right;
+      margin-right: 60px; }
+
+#portfolio {
+  height: 1360px;
+  width: 100%; }
+  #portfolio .upper {
+    height: 400px; }
+    #portfolio .upper .head {
+      margin: 0 auto;
+      width: 1060px;
+      padding: 100px 0; }
+      #portfolio .upper .head .headline {
+        color: #07143A;
+        letter-spacing: 2px;
+        font-size: 42px;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+        padding: 0 0 7px 0; }
+      #portfolio .upper .head .headline-subtext {
+        color: #a0a4ae;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: center;
+        display: block; }
+    #portfolio .upper .portfolio-menu {
+      text-align: center; }
+      #portfolio .upper .portfolio-menu a {
+        display: inline-block;
+        padding: 20px;
+        color: #a0a4ae;
+        font-weight: 600;
+        font-size: 24px; }
+        #portfolio .upper .portfolio-menu a.active {
+          color: #07143A; }
+  #portfolio .lower {
+    height: 960px;
+    display: flex; }
+    #portfolio .lower .picture {
+      width: 50%;
+      display: inline-block;
+      background: url("https://cdn.mobilesyrup.com/wp-content/uploads/2017/09/iphone-x-no-wm.jpg");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      background-attachment: fixed; }
+    #portfolio .lower .content {
+      width: 50%;
+      border-top: 1px solid #eaecf1; }
+      #portfolio .lower .content .container {
+        margin: 0 auto;
+        width: 60%; }
+        #portfolio .lower .content .container .logo-container {
+          position: relative;
+          border: 1px solid #eaecf1;
+          border-radius: 27px;
+          width: 120px;
+          height: 120px;
+          margin: 140px 0 0 0; }
+          #portfolio .lower .content .container .logo-container .logo {
+            position: absolute;
+            top: 28px;
+            left: 25px;
+            font-size: 40px;
+            padding: 2px 17px;
+            border: 2px solid black;
+            font-weight: 800; }
+        #portfolio .lower .content .container .description {
+          margin: 80px 0 60px 0; }
+          #portfolio .lower .content .container .description .headline {
+            display: block;
+            margin: 0 0 40px 0;
+            font-size: 30px;
+            color: #07143A;
+            letter-spacing: 1px;
+            font-weight: 600; }
+          #portfolio .lower .content .container .description .headline-subtext {
+            color: #868a95;
+            font-size: 15px;
+            letter-spacing: 0.6px; }
+        #portfolio .lower .content .container .case-study {
+          width: 96px;
+          display: block;
+          color: #07143A;
+          font-size: 12px;
+          letter-spacing: 1px;
+          font-weight: 800;
+          text-transform: uppercase;
+          padding: 25px 60px;
+          border: 3px solid #eaecf1;
+          border-radius: 50px; }
+        #portfolio .lower .content .container .arrows {
+          margin: 150px 0 0 0; }
+          #portfolio .lower .content .container .arrows .fa {
+            font-size: 25px;
+            margin-right: 12px;
+            color: #a0a4ae; }
+            #portfolio .lower .content .container .arrows .fa.active {
+              color: #07143A; }
+
+#careers {
+  background: -webkit-linear-gradient(#6242D1, #40C2FE);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#6242D1, #40C2FE);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#6242D1, #40C2FE);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#6242D1, #40C2FE);
+  color: white;
+  width: 100%;
+  height: 930px; }
+  #careers .header {
+    width: 630px;
+    text-align: center;
+    padding: 140px 10px 15px 10px;
+    margin: 0 auto;
+    border-bottom: 1.5px solid rgba(199, 200, 201, 0.6); }
+    #careers .header span {
+      display: block; }
+    #careers .header .headline {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding-bottom: 10px; }
+    #careers .header .headline-subtext {
+      letter-spacing: 1px;
+      font-size: 16px; }
+  #careers .content {
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 100px 0 0 0; }
+    #careers .content .left {
+      display: block;
+      max-width: 580px;
+      padding: 0 150px 0 0; }
+      #careers .content .left .available-positions {
+        display: block; }
+        #careers .content .left .available-positions .headline {
+          font-size: 25px;
+          letter-spacing: 1px;
+          font-weight: 600; }
+        #careers .content .left .available-positions .headline-subtext {
+          font-size: 15px;
+          padding: 16px 0 0 0;
+          display: block;
+          color: #c9cdd8;
+          letter-spacing: 0.6px;
+          line-height: 23px; }
+      #careers .content .left .jobs-btn-container {
+        vertical-align: middle;
+        text-align: center; }
+        #careers .content .left .jobs-btn-container .jobs-btn {
+          border-radius: 50px;
+          width: 150px;
+          text-transform: uppercase;
+          color: #FFF;
+          display: block;
+          letter-spacing: 1.3px;
+          font-size: 14px;
+          margin: 100px 0 0 0;
+          padding: 25px 35px;
+          border: 0.9px solid rgba(199, 200, 201, 0.6); }
+    #careers .content .right {
+      max-width: 700px; }
+      #careers .content .right .position {
+        padding: 0 0 100px 0; }
+        #careers .content .right .position .headline {
+          padding: 0 0 16px 0; }
+          #careers .content .right .position .headline span {
+            font-size: 19px;
+            letter-spacing: 1px;
+            padding: 0 15px 0 0; }
+          #careers .content .right .position .headline .fa {
+            font-size: 20px;
+            font-weight: 600; }
+        #careers .content .right .position .headline-subtext {
+          font-size: 15px;
+          display: block;
+          color: #c9cdd8;
+          letter-spacing: 0.6px;
+          line-height: 26px; }
+
+#blog {
+  height: 1030px;
+  background-color: #F7F8FB; }
+  #blog .header {
+    width: 630px;
+    text-align: center;
+    padding: 140px 10px 15px 10px;
+    margin: 0 auto;
+    border-bottom: 1.5px solid rgba(199, 200, 201, 0.6); }
+    #blog .header span {
+      display: block; }
+    #blog .header .headline {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding-bottom: 10px; }
+    #blog .header .headline-subtext {
+      letter-spacing: 1px;
+      font-size: 16px;
+      color: #a0a4ae; }
+  #blog .blog-content {
+    padding-top: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1130px; }
+    #blog .blog-content .remote-team {
+      -webkit-box-shadow: 3px 3px 75px -27px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 3px 3px 75px -27px rgba(0, 0, 0, 0.75);
+      box-shadow: 3px 3px 75px -27px rgba(0, 0, 0, 0.75);
+      background: #FFF;
+      width: 740px;
+      height: 480px;
+      display: inline-block;
+      border-radius: 10px; }
+      #blog .blog-content .remote-team .image-part {
+        display: inline-block;
+        width: 60%;
+        float: left;
+        overflow: hidden;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px; }
+        #blog .blog-content .remote-team .image-part img {
+          height: 480px;
+          position: relative;
+          left: -276px; }
+      #blog .blog-content .remote-team .content-part {
+        float: right;
+        width: 40%;
+        height: 484px;
+        display: inline-block; }
+        #blog .blog-content .remote-team .content-part .title {
+          color: black;
+          display: block;
+          font-size: 20px;
+          padding: 30px 35px 210px 30px;
+          letter-spacing: 2px;
+          line-height: 35px; }
+        #blog .blog-content .remote-team .content-part .author {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 55px 0 30px; }
+          #blog .blog-content .remote-team .content-part .author img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; }
+          #blog .blog-content .remote-team .content-part .author .time {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            color: #a0a4ae;
+            display: flex;
+            align-self: center; }
+    #blog .blog-content .productivity {
+      -webkit-box-shadow: 3px 3px 75px -27px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 3px 3px 75px -27px rgba(0, 0, 0, 0.75);
+      box-shadow: 3px 3px 75px -27px rgba(0, 0, 0, 0.75);
+      max-width: 370px;
+      height: 478px;
+      background: #FFF;
+      display: inline-block;
+      border-radius: 10px; }
+      #blog .blog-content .productivity .image-part {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+        #blog .blog-content .productivity .image-part img {
+          height: 268px;
+          position: relative;
+          left: 0;
+          right: 0; }
+      #blog .blog-content .productivity .content-part .title {
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        padding: 30px 30px 35px 30px;
+        letter-spacing: 2px;
+        line-height: 25px; }
+      #blog .blog-content .productivity .content-part .author {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 55px 0 30px; }
+        #blog .blog-content .productivity .content-part .author img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%; }
+        #blog .blog-content .productivity .content-part .author .time {
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 0.3px;
+          color: #a0a4ae;
+          display: flex;
+          align-self: center; }
+
+#social {
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #social .fa {
+    display: flex;
+    align-items: center;
+    padding: 35px 132px;
+    font-size: 23px;
+    border: 1px solid #EFF0F5;
+    color: #B6BBCE; }
+
+#footer {
+  height: 485px;
+  width: 100%;
+  background: #FFF; }
+  #footer .content {
+    width: 1175px;
+    margin: 0 auto; }
+    #footer .content .section {
+      margin: 140px 80px 0 0;
+      display: inline-block;
+      vertical-align: text-top; }
+      #footer .content .section .title {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: black; }
+      #footer .content .section .nav {
+        margin-top: 20px; }
+        #footer .content .section .nav a {
+          display: block;
+          color: #a7acbc;
+          font-size: 14px;
+          margin-top: 10px; }
+      #footer .content .section .subtext {
+        color: #a7acbc;
+        margin-top: 20px;
+        display: block; }
+    #footer .content .logo {
+      display: inline-block;
+      margin: 140px 150px 0 0; }
+      #footer .content .logo i {
+        color: #a7acbc;
+        font-size: 43px; }
+    #footer .content .newsletter {
+      margin-left: 140px;
+      max-width: 350px; }
+      #footer .content .newsletter .email {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 6px;
+        width: 310px;
+        margin-top: 20px;
+        border: 1px solid #EFF1F5; }
+        #footer .content .newsletter .email .input {
+          width: 200%;
+          font-size: 13px;
+          color: #a7acbc;
+          outline: none;
+          border: none; }
+          #footer .content .newsletter .email .input::placeholder {
+            font-size: 13px;
+            color: #a7acbc;
+            margin-left: 10px; }
+        #footer .content .newsletter .email #send {
+          font-size: 26px;
+          color: #FFF;
+          padding: 6px 16px;
+          border-radius: 6px;
+          background: #0096FF; }
+
+html {
+  font-family: 'Lato', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=main.css.map */
